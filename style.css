@@ -1,9 +1,7 @@
 nav {
   display: flex;
   align-items: center;
-  /* padding: var(--spacing-3) 0; */
-  /* background-color: #00796A; */
-  border-radius: 5px;
+  width: 85vw;
 }
 
 nav h1 {
@@ -13,8 +11,8 @@ nav h1 {
 .navigation-items {
   display: flex;
   list-style-type: none;
-  justify-content: space-around;
-  align-items: center;
+  justify-content: space-between;
+  /* align-items: left; */
   margin-left: auto;
 }
 
@@ -36,11 +34,22 @@ body {
 
 .about-container {
   display: flex;
-  justify-content: space-around;
+  flex-direction: row;
+  justify-content: space-between;
   flex-wrap: wrap;
-  height: 100vh;
-  width: 100vw;
+  height: 90vh;
+  width: 90vw;
   /* background-color: azure; */
+}
+
+#about-me {
+  align-content: center;
+}
+
+#columbus-ohio {
+  /* display: inline-flex; */
+  width: 400px;
+  height: 400px;
 }
 
 .projects-container {

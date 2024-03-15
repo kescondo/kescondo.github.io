@@ -3,6 +3,12 @@
 - 😄 Hello! I'm Kristina (she/her), and I recently finished up my program at Tech Elevator, a 14-week in-person full-stack coding bootcamp. I'm interested in full-stack, front-end, or mobile development.
 - I've started this portfolio to be able to better showcase my projects and coding skills, as well as reflect on my progress as I continue to improve.
 
+### Technology, libraries, and frameworks
+- HTML, CSS, JavaScript
+- Images from Canva
+- Google Fonts
+- Font Awesome icons
+
 ### To-dos ⚡
 [x] Plan sections of the portfolio
 [x] Create wireframe
