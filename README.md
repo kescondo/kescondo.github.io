@@ -4,7 +4,7 @@
 - I've started this portfolio to be able to better showcase my projects and coding skills, as well as reflect on my progress as I continue to improve.
 
 ### Technology, libraries, and frameworks
-- HTML, CSS, JavaScript
+- HTML, CSS, JavaScript (planning to add React or similar framework)
 - Images from Canva
 - Google Fonts
 - Font Awesome icons
