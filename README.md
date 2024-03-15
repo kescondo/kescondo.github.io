@@ -10,14 +10,14 @@
 - Font Awesome icons
 
 ### To-dos ⚡
-[x] Plan sections of the portfolio
-[x] Create wireframe
-[x] Create files and deploy locally
-[x] Set up Git version control
-[ ] Build Home page (in progress)
-[ ] Build Contact page
-[ ] Style content
-[ ] Add interactive elements (dropdown menus, drop shadows, etc.)
-[ ] Make it responsive (media queries)
-[ ] Make final tweaks
-[ ] Share!
+- [x] Plan sections of the portfolio
+- [x] Create wireframe
+- [x] Create files and deploy locally
+- [x] Set up Git version control
+- [ ] Build Home page (in progress)
+- [ ] Build Contact page
+- [ ] Style content
+- [ ] Add interactive elements (dropdown menus, drop shadows, etc.)
+- [ ] Make it responsive (media queries)
+- [ ] Make final tweaks
+- [ ] Share!
