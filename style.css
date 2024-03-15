@@ -1,7 +1,16 @@
+body {
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  background-color: #E2F4FB;
+  
+}
+
 nav {
   display: flex;
   align-items: center;
   width: 85vw;
+  position: fixed;
+  background-color: #E2F4FB;
 }
 
 nav h1 {
@@ -25,11 +34,9 @@ nav h1 {
   text-decoration: none;
 }
 
-body {
-  font-family: "Raleway", sans-serif;
-  font-style: normal;
-  background-color: #E2F4FB;
-  
+main {
+  position: absolute;
+  top: 70px;
 }
 
 .about-container {
