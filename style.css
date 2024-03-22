@@ -1,33 +1,41 @@
 body {
   font-family: "Raleway", sans-serif;
   font-style: normal;
-  background-color: #E2F4FB;
+  background-color: #ffffff;
   
 }
 
-nav {
+.navigation-container {
   display: flex;
-  align-items: center;
-  width: 85vw;
+  /* justify-content: space-evenly; */
+  width: 100vw;
   position: fixed;
+  top: 0px;
+  left: 0px;
+  z-index: 1;
   background-color: #E2F4FB;
+  box-shadow: 1px 1px 1px 1px rgb(179, 179, 179);
+  /* background-color: blue; */
 }
 
-nav h1 {
-  margin-left: 20px;
+#nav-logo {
+  margin: 5px;
+  height: 70px;
+  width: 70px;
+  border-radius: 100%;
+  /* justify-self: flex-start; */
 }
 
 .navigation-items {
   display: flex;
   list-style-type: none;
-  justify-content: space-between;
-  /* align-items: left; */
-  margin-left: auto;
+  margin-left: 50%;
 }
 
 .navigation-items li {
-  display: flex;
-  padding: 5%;
+  display: inline-block;
+  width: 100px;
+  padding: 3% 0%;
 }
 
 .navigation-items a {
@@ -40,17 +48,25 @@ main {
 }
 
 .about-container {
-  display: flex;
+  display: inline-block;
   flex-direction: row;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  justify-content: space-evenly;
+  flex-wrap: nowrap;
   height: 90vh;
   width: 90vw;
   /* background-color: azure; */
 }
 
-#about-me {
-  align-content: center;
+#about-me, #based-in-ohio {
+  justify-content: center;
+  flex-grow: 1;
+}
+
+#profile-picture {
+  width: 400px;
+  height: 400px;
+  border-radius: 90px;
+  box-shadow: 1px 1px 1px 1px rgb(179, 179, 179);
 }
 
 #columbus-ohio {
@@ -77,7 +93,7 @@ main {
 
 footer {
   height: 5vh;
-  width: 100vw;
+  width: 90vw;
   align-content: center;
 }
 
