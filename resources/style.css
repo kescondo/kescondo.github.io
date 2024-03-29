@@ -12,10 +12,22 @@ body {
   position: fixed;
   top: 0px;
   left: 0px;
-  z-index: 1;
-  background-color: #E2F4FB;
-  box-shadow: 1px 1px 1px 1px rgb(179, 179, 179);
+  z-index: 2;
+  /* background-color: #E2F4FB; */
+  /* box-shadow: 1px 1px 1px 1px rgb(179, 179, 179); */
   /* background-color: blue; */
+}
+
+#header-image {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  z-index: -2;
+  width: 100vw;
+  height: 80px;
+  opacity: .95;
+  object-fit: cover;
+  object-position: 100% 0;  
 }
 
 #nav-logo {
@@ -29,13 +41,13 @@ body {
 .navigation-items {
   display: flex;
   list-style-type: none;
-  margin-left: 50%;
+  margin-left: 57%;
 }
 
 .navigation-items li {
   display: inline-block;
   width: 100px;
-  padding: 3% 0%;
+  padding: 3%;
 }
 
 .navigation-items a {
