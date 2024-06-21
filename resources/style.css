@@ -5,15 +5,14 @@ body {
   
 }
 
+/* header & nav bar */
 .navigation-container {
-  display: flex;
-  /* justify-content: space-evenly; */
   width: 100vw;
   position: fixed;
   top: 0px;
   left: 0px;
   z-index: 2;
-  /* background-color: #E2F4FB; */
+  
   /* box-shadow: 1px 1px 1px 1px rgb(179, 179, 179); */
   /* background-color: blue; */
 }
@@ -27,86 +26,107 @@ body {
   height: 80px;
   opacity: .95;
   object-fit: cover;
-  object-position: 100% 0;  
+  object-position: 95% 0; 
 }
-
+/* 
 #nav-logo {
   margin: 5px;
   height: 70px;
   width: 70px;
   border-radius: 100%;
-  /* justify-self: flex-start; */
-}
+} */
 
 .navigation-items {
   display: flex;
+  flex-direction: row;
+  /* flex-wrap: wrap; */
   list-style-type: none;
   margin-left: 57%;
 }
 
 .navigation-items li {
   display: inline-block;
+  justify-items: flex-end;
   width: 100px;
-  padding: 3%;
+  padding: 2%;
 }
 
+/* Note to self, remember: link, visited, hover, active */
 .navigation-items a {
   text-decoration: none;
+  color: #3647b2;
 }
 
+.navigation-items a:hover {
+  font-weight: bold;
+}
+
+/* main site */
 main {
   position: absolute;
   top: 70px;
+  margin: 2%;
 }
 
+/* About Me section */
 .about-container {
-  display: inline-block;
+  display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  flex-wrap: nowrap;
-  height: 90vh;
-  width: 90vw;
-  /* background-color: azure; */
+  flex-wrap: wrap;
 }
 
-#about-me, #based-in-ohio {
-  justify-content: center;
-  flex-grow: 1;
+.about-me {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 }
 
-#profile-picture {
-  width: 400px;
-  height: 400px;
-  border-radius: 90px;
+#headshot {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
   box-shadow: 1px 1px 1px 1px rgb(179, 179, 179);
+}
+
+.based-in-ohio {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 }
 
 #columbus-ohio {
   /* display: inline-flex; */
-  width: 400px;
-  height: 400px;
+  width: 300px;
+  height: 300px;
+  border-radius: 5%;
+  box-shadow: 1px 1px 1px 1px rgb(179, 179, 179);
 }
 
+/* Projects section */
 .projects-container {
   height: 100vh;
   width: 100vw;
   /* background-color: rgb(201, 201, 201); */
 }
 
+/* Tech Stack/Skills section */
 .skills-container {
   height: 50vh;
   width: 100vw;
 }
 
+/* Contact section */
 .contact-container {
   height: 30vh;
-  width: 100vw;
+  /* width: 100vw; */
 }
 
+/* Footer */
 footer {
-  height: 5vh;
-  width: 90vw;
-  align-content: center;
+  /* height: 5vh;
+  width: 90vw; */
+  text-align: center;
 }
 
 /* @media only screen and (max-width: 600px) {
