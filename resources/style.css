@@ -24,17 +24,10 @@ body {
   z-index: -2;
   width: 100vw;
   height: 80px;
-  opacity: .95;
+  opacity: .98;
   object-fit: cover;
   object-position: 95% 0; 
 }
-/* 
-#nav-logo {
-  margin: 5px;
-  height: 70px;
-  width: 70px;
-  border-radius: 100%;
-} */
 
 .navigation-items {
   display: flex;
@@ -55,6 +48,7 @@ body {
 .navigation-items a {
   text-decoration: none;
   color: #3647b2;
+  font-size: 1.25em;
 }
 
 .navigation-items a:hover {
@@ -65,67 +59,120 @@ body {
 main {
   position: absolute;
   top: 70px;
-  margin: 2%;
+  padding: 2%;
+}
+
+h2, h3, h4 {
+  font-family: Georgia, Times, 'Times New Roman', serif;
+}
+
+hr {
+  width: 110%;
+  margin: 2% auto;
+  border-top: 1px solid #3647b2; /* no border */
 }
 
 /* About Me section */
-.about-container {
+.intro-container {
   display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
+  /* flex-direction: row; */
+  justify-content: space-between;
   flex-wrap: wrap;
+  align-items: center;
 }
 
-.about-me {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
+.text-div {
+  width: 60%;
+  /* border: 2px dotted #363636; */
+}
+
+#my-name {
+  font-size: 4em;
+  font-variant: small-caps;
+  line-height: 0.3;
+}
+
+#professional-id {
+  font-size: 2em;
+  color: #363636;
+}
+
+#based-in-ohio {
+  font-size: 1.5em;
+  color: #007084;
+}
+
+.text-div p {
+  font-size: 1.25em;
+  /* font-weight: 505; */
+}
+
+.photo-div {
+  width: 30%;
 }
 
 #headshot {
   width: 300px;
   height: 300px;
   border-radius: 50%;
-  box-shadow: 1px 1px 1px 1px rgb(179, 179, 179);
-}
-
-.based-in-ohio {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-}
-
-#columbus-ohio {
-  /* display: inline-flex; */
-  width: 300px;
-  height: 300px;
-  border-radius: 5%;
-  box-shadow: 1px 1px 1px 1px rgb(179, 179, 179);
+  box-shadow: 1px 1px 1px 1px #b3b3b3;
+  /* margin: 5%; */
 }
 
 /* Projects section */
 .projects-container {
-  height: 100vh;
-  width: 100vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
   /* background-color: rgb(201, 201, 201); */
+}
+
+.project-card {
+  width: 300px;
+  height: 250px;
+  padding: 1%;
+  margin: 10px;
+  /* border: 1px solid #363636; */
+  box-shadow: 1px 1px 1px 1px #737373;
+  border-radius: 5%;
+}
+
+.project-card img {
+  width: 250px;
+  margin: 5% 10%;
+  box-shadow: 0px 1px 1px 1px #737373;
 }
 
 /* Tech Stack/Skills section */
 .skills-container {
-  height: 50vh;
-  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.tech-stack-logos {
+  display: block;
+  width: 120px;
+  height: 100px;
+  justify-content: center;
+  padding: 2%;
+  margin: 0 0 2% 0;
+  text-align: center;
+}
+
+.tech-stack-logos img {
+  height: 100px;
 }
 
 /* Contact section */
 .contact-container {
   height: 30vh;
-  /* width: 100vw; */
+  
 }
 
 /* Footer */
 footer {
-  /* height: 5vh;
-  width: 90vw; */
   text-align: center;
 }
 
