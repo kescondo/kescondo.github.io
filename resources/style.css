@@ -1,8 +1,8 @@
 body {
   font-family: "Raleway", sans-serif;
   font-style: normal;
-  background-color: #ffffff;
-  
+  /* background-color: #ffffff; */
+  background-color: #fafaface;
 }
 
 /* header & nav bar */
@@ -27,6 +27,7 @@ body {
   opacity: .98;
   object-fit: cover;
   object-position: 95% 0; 
+  box-shadow: 0 0 1px 0 #686868;
 }
 
 .navigation-items {
@@ -49,6 +50,7 @@ body {
   text-decoration: none;
   color: #3647b2;
   font-size: 1.25em;
+  scroll-behavior: smooth;
 }
 
 .navigation-items a:hover {
@@ -68,7 +70,7 @@ h2, h3, h4 {
 
 hr {
   width: 110%;
-  margin: 2% auto;
+  margin: 3% auto;
   border-top: 1px solid #3647b2; /* no border */
 }
 
@@ -95,11 +97,14 @@ hr {
 #professional-id {
   font-size: 2em;
   color: #363636;
+  line-height: 1;
 }
 
 #based-in-ohio {
-  font-size: 1.5em;
+  display: inline;
+  font-size: 1.3em;
   color: #007084;
+  line-height: 0;
 }
 
 .text-div p {
@@ -119,6 +124,20 @@ hr {
   /* margin: 5%; */
 }
 
+button {
+  padding: 15px;
+  margin: 5px;
+  color: #e5e5e5;
+  background-color: #008004de;
+  border-style: none;
+  border-radius: 5px;
+  box-shadow: 0 1px 1px 0 #b3b3b3;
+}
+
+button:hover {
+  background-color: #008004;
+}
+
 /* Projects section */
 .projects-container {
   display: flex;
@@ -129,11 +148,11 @@ hr {
 
 .project-card {
   width: 300px;
-  height: 250px;
+  height: 275px;
   padding: 1%;
   margin: 10px;
   /* border: 1px solid #363636; */
-  box-shadow: 1px 1px 1px 1px #737373;
+  box-shadow: 0 1px 1px 0 #737373;
   border-radius: 5%;
 }
 
@@ -142,6 +161,18 @@ hr {
   margin: 5% 10%;
   box-shadow: 0px 1px 1px 1px #737373;
 }
+
+.project-title {
+  font-weight: 600;
+}
+
+.project-card p {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+
 
 /* Tech Stack/Skills section */
 .skills-container {
@@ -166,9 +197,42 @@ hr {
 }
 
 /* Contact section */
-.contact-container {
+/* .contact-container {
   height: 30vh;
-  
+} */
+
+#fullname, #email {
+  padding: 8px;
+  margin: 10px;
+  width: 300px;
+  border-radius: 3px;
+  border-width: 1px;
+}
+
+textarea {
+  width: 600px;
+  height: 200px;
+  margin: 10px;
+  border-radius: 3px;
+  border-width: 1px;
+}
+
+input[type=submit], input[type=reset] {
+  background-color: #008004de;
+  color: white;
+  padding: 15px 20px;
+  margin: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #008004;
+}
+
+input[type=reset]:hover {
+  background-color: #008004;
 }
 
 /* Footer */

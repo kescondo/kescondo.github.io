@@ -6,6 +6,7 @@
     <title>Kristina Escondo, Full Stack Developer</title>
     <link rel="stylesheet" type="text/css" href="resources\style.css">
     <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Raleway:100,200,600,700" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/3001362045.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -23,26 +24,40 @@
                 <a href="#skills">Stack</a>
             </li>
             <li>
+                <a href="https://www.linkedin.com/in/kristina-escondo/"><i class="fa-brands fa-linkedin fa-2xl"
+                        style="color: #3776e1;"></i></a>
+            </li>
+            <li>
+                <a href="https://github.com/kescondo"><i class="fa-brands fa-github fa-2xl"></i></a>
+            </li>
+
+            <!-- <li>
                 <a href="https://www.linkedin.com/in/kristina-escondo/" target="_blank">LinkedIn</a>
             </li>
             <li>
                 <a href="https://github.com/kescondo" target="_blank">GitHub</a>
-            </li>
+            </li> -->
         </ul>
     </header>
 
     <main>
-        <hr>
-        <section class="intro-container">
+        <!-- <hr> -->
+        <section class="intro-container" id="about">
             <div class="text-div">
                 <h2 id="my-name">Kristina Escondo</h2>
-                <h3 id="professional-id">Full Stack Developer with a literary twist</h3>
+                <!-- <img src="assets/my-name.png" alt="Kristina Escondo" /> -->
+                <h3 id="professional-id">Full Stack Developer, Experience Innovator, Solution Seeker</h3>
                 <!-- put a map pin icon before the next line -->
+                <i class="fa-solid fa-location-dot fa-xl" style="color: #d21414;"></i>
                 <h4 id="based-in-ohio">Based in Columbus, Ohio (USA)</h4>
-                <p>I design and build <i>clean, thoughtful,</i> and <i>functional</i> web applications to provide a
-                    seamless user experience that makes your story memorable.</p>
+                <p>I design and build <i>clean, thoughtful,</i> and <i>functional</i> web applications to provide
+                    engaging
+                    and intuitive user experiences that showcase your unique story.</p>
                 <p>My passion for people-centered technological innovation, creativity, and social change stems from my
                     previous career as an educator/researcher in the humanities. </p>
+                    <button class="button">More About Me</button>
+                    <button class="button">Resume</button>
+
             </div>
             <div class="photo-div">
                 <img src="assets\headshot.jpg" alt="headshot of the author" id="headshot" />
@@ -55,28 +70,35 @@
         <section class="projects-container" id="projects">
             <div class="project-card">
                 <img src="assets/laptop-placeholder.png" alt="screenshot of app" id="playsnap" />
-                <p>PlaySnap: Toy Inventory Manager</p>
-                <p>Description here</p>
+                <p class="project-title">PlaySnap: Toy Inventory Manager</p>
+                <p class="project-description">Organizes and keeps track of a family's toy collection while documenting
+                    a family's story of play.</p>
+                <a href="#">Learn more</a>
             </div>
             <div class="project-card">
                 <img src="assets/laptop-placeholder.png" alt="screenshot of app" id="playsnap" />
-                <p>Pamilya: Home Management App</p>
-                <p>Description here</p>
+                <p class="project-title">Pamilya: Home Management App</p>
+                <p class="project-description">Manages a family's schedules, to-do lists, and finds local
+                    family-friendly activities.</p>
+                <a href="#">Learn more</a>
             </div>
             <div class="project-card">
                 <img src="assets/laptop-placeholder.png" alt="screenshot of app" id="playsnap" />
-                <p>Chef's Compass Meal Planner</p>
-                <p>Description here</p>
+                <p class="project-title">Chef's Compass: Meal Planner</p>
+                <p class="project-description">Team project: Finds and saves recipes and create meal plans.</p>
+                <a href="#">Learn more</a>
             </div>
             <div class="project-card">
                 <img src="assets/laptop-placeholder.png" alt="screenshot of app" id="playsnap" />
-                <p>Sweetie Boom's Candy Shop</p>
-                <p>Description here</p>
+                <p class="project-title">Sweetie Boom's Candy Shop</p>
+                <p class="project-description">An e-commerce application that manages inventory for a candy shop.</p>
+                <a href="#">Learn more</a>
             </div>
             <div class="project-card">
                 <img src="assets/laptop-placeholder.png" alt="screenshot of app" id="playsnap" />
-                <p>Remit Roo Money Transfer</p>
-                <p>Description here</p>
+                <p class="project-title">Remit Roo Money Transfer</p>
+                <p class="project-description">A payment transfer service.</p>
+                <a href="#">Learn more</a>
             </div>
         </section>
 
@@ -116,11 +138,22 @@
 
         <hr>
 
-        <h2>Contact</h2>
+        <h2>Let's get in touch</h2>
         <section class="contact-container" id="contact">
-            <p>Let's get in touch!</p>
-            <!-- Insert form here -->
+            <div class="form-container">
+                <form>
+                        <label for="fullname">Your name</label><br>
+                        <input type="text" id="fullname" name="fullname"><br>
+                        <label for="email">Your e-mail</label><br>
+                        <input type="email" id="email" name="email"><br>
+                        <label for="message">Your message</label><br>
+                        <textarea id="message" name="message" placeholder="Talk to me!"></textarea><br>
+                        <input type="submit" value="Submit">
+                        <input type="reset" value="Reset">
+                </form>
+            </div>
         </section>
+
         <footer>
             <p>&copy; 2024 by Kristina A. Escondo</p>
         </footer>
