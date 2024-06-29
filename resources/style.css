@@ -2,38 +2,73 @@ body {
   font-family: "Raleway", sans-serif;
   font-style: normal;
   /* background-color: #ffffff; */
-  background-color: #fafaface;
+  /* background-color: #fafaface; */
+  /* background: url("../assets/header-image.png"); 
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: right top;
+  background-attachment: scroll;  */
+}
+
+@font-face {
+  font-family: brittanySignature;
+  src: url(.\assets\brittany_signature\BrittanySignature.ttf);
 }
 
 /* header & nav bar */
+.background-image {
+  position: relative;
+  width: 100vw;
+  /* height: auto; */
+  /* overflow: hidden;  */
+  text-align: center;
+  top: -20px;
+  left: -1%;
+  right: -1%;
+}
+
+.background-image img {
+  width: 100%;
+  opacity: 0.95;
+  position: relative;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.white-box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 40%, rgba(255, 255, 255, 1) 100%);
+  pointer-events: none; /* Allows interaction with elements behind the white box */
+  z-index: 0;
+}
+
+/* #header-image {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  z-index: -8;
+  width: 100vw;
+  opacity: .98;
+  object-fit: cover;
+  object-position: 95% 0; 
+} */
+
 .navigation-container {
   width: 100vw;
   position: fixed;
   top: 0px;
   left: 0px;
   z-index: 2;
-  
-  /* box-shadow: 1px 1px 1px 1px rgb(179, 179, 179); */
-  /* background-color: blue; */
-}
-
-#header-image {
-  position: fixed;
-  top: 0px;
-  left: 0px;
-  z-index: -2;
-  width: 100vw;
-  height: 80px;
-  opacity: .98;
-  object-fit: cover;
-  object-position: 95% 0; 
-  box-shadow: 0 0 1px 0 #686868;
 }
 
 .navigation-items {
   display: flex;
   flex-direction: row;
-  /* flex-wrap: wrap; */
+  z-index: 2;
   list-style-type: none;
   margin-left: 57%;
 }
@@ -64,9 +99,7 @@ main {
   padding: 2%;
 }
 
-h2, h3, h4 {
-  font-family: Georgia, Times, 'Times New Roman', serif;
-}
+
 
 hr {
   width: 110%;
@@ -74,46 +107,61 @@ hr {
   border-top: 1px solid #3647b2; /* no border */
 }
 
+h3, h4 {
+  /* font-family: Garamond, Georgia, Times, 'Times New Roman', serif; */
+  font-weight: 500;
+}
+
 /* About Me section */
 .intro-container {
   display: flex;
-  /* flex-direction: row; */
-  justify-content: space-between;
+  /* flex-direction: row-reverse; */
+  justify-content: space-around;
   flex-wrap: wrap;
   align-items: center;
+  margin-top: 20px;
+  height: 70vh;
 }
 
 .text-div {
-  width: 60%;
+  width: 55%;
   /* border: 2px dotted #363636; */
 }
 
 #my-name {
-  font-size: 4em;
-  font-variant: small-caps;
-  line-height: 0.3;
+  font-family: "mina", serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 3em;
+  /* font-variant: small-caps; */
+  line-height: 1;
 }
 
 #professional-id {
-  font-size: 2em;
+  font-size: 1.5em;
   color: #363636;
   line-height: 1;
 }
 
 #based-in-ohio {
   display: inline;
-  font-size: 1.3em;
+  font-size: 1.2em;
   color: #007084;
   line-height: 0;
 }
 
 .text-div p {
-  font-size: 1.25em;
+  font-size: 1.2em;
   /* font-weight: 505; */
 }
 
-.photo-div {
-  width: 30%;
+/* .photo-div {
+  width: 40%;
+} */
+
+#columbus-ohio {
+  width: 300px;
+  height: 300px;
 }
 
 #headshot {
@@ -184,16 +232,16 @@ button:hover {
 
 .tech-stack-logos {
   display: block;
-  width: 120px;
+  width: 100px;
   height: 100px;
   justify-content: center;
-  padding: 2%;
-  margin: 0 0 2% 0;
+  padding: 1%;
+  /* margin: 0 0 1% 0; */
   text-align: center;
 }
 
 .tech-stack-logos img {
-  height: 100px;
+  height: 80px;
 }
 
 /* Contact section */

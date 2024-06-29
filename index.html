@@ -6,22 +6,26 @@
     <title>Kristina Escondo, Full Stack Developer</title>
     <link rel="stylesheet" type="text/css" href="resources\style.css">
     <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Raleway:100,200,600,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.typekit.net/dft4cwm.css">
     <script src="https://kit.fontawesome.com/3001362045.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <header class="navigation-container">
+    <div class="background-image">
+        <div class="white-box"></div>
         <img src="assets\header-image.png" id="header-image" />
-        <!-- <img src="assets\initials-logos\initials-logo-only-1.png" id="nav-logo" /> -->
+    </div>
+
+    <header class="navigation-container">
         <ul class="navigation-items">
             <li>
                 <a href="#about">About</a>
             </li>
             <li>
-                <a href="#projects">Projects</a>
+                <a href="#projects">Work</a>
             </li>
             <li>
-                <a href="#skills">Stack</a>
+                <a href="#contact">Contact</a>
             </li>
             <li>
                 <a href="https://www.linkedin.com/in/kristina-escondo/"><i class="fa-brands fa-linkedin fa-2xl"
@@ -31,18 +35,17 @@
                 <a href="https://github.com/kescondo"><i class="fa-brands fa-github fa-2xl"></i></a>
             </li>
 
-            <!-- <li>
-                <a href="https://www.linkedin.com/in/kristina-escondo/" target="_blank">LinkedIn</a>
-            </li>
-            <li>
-                <a href="https://github.com/kescondo" target="_blank">GitHub</a>
-            </li> -->
         </ul>
     </header>
 
     <main>
         <!-- <hr> -->
         <section class="intro-container" id="about">
+            <div class="photo-div">
+                <!-- <img src="assets\headshot.jpg" alt="headshot of the author" id="headshot" /> -->
+                <img src="assets/columbus-ohio-clear.png" alt="Columbus, Ohio" id="columbus-ohio" />
+            </div>
+
             <div class="text-div">
                 <h2 id="my-name">Kristina Escondo</h2>
                 <!-- <img src="assets/my-name.png" alt="Kristina Escondo" /> -->
@@ -50,18 +53,14 @@
                 <!-- put a map pin icon before the next line -->
                 <i class="fa-solid fa-location-dot fa-xl" style="color: #d21414;"></i>
                 <h4 id="based-in-ohio">Based in Columbus, Ohio (USA)</h4>
-                <p>I design and build <i>clean, thoughtful,</i> and <i>functional</i> web applications to provide
-                    engaging
-                    and intuitive user experiences that showcase your unique story.</p>
-                <p>My passion for people-centered technological innovation, creativity, and social change stems from my
-                    previous career as an educator/researcher in the humanities. </p>
-                    <button class="button">More About Me</button>
-                    <button class="button">Resume</button>
+                <p>I craft solutions through <i>clean, thoughtful,</i> and <i>functional</i> web applications.</p>
+                <p>My passion for creating intuitive and engaging experiences, problem solving through design, and
+                    innovation stems from my
+                    background as an educator/researcher in the humanities. </p>
+                <button class="button">More About Me</button>
+                <button class="button">Resume</button>
+            </div>
 
-            </div>
-            <div class="photo-div">
-                <img src="assets\headshot.jpg" alt="headshot of the author" id="headshot" />
-            </div>
         </section>
 
         <hr>
@@ -142,14 +141,14 @@
         <section class="contact-container" id="contact">
             <div class="form-container">
                 <form>
-                        <label for="fullname">Your name</label><br>
-                        <input type="text" id="fullname" name="fullname"><br>
-                        <label for="email">Your e-mail</label><br>
-                        <input type="email" id="email" name="email"><br>
-                        <label for="message">Your message</label><br>
-                        <textarea id="message" name="message" placeholder="Talk to me!"></textarea><br>
-                        <input type="submit" value="Submit">
-                        <input type="reset" value="Reset">
+                    <label for="fullname">Your name</label><br>
+                    <input type="text" id="fullname" name="fullname"><br>
+                    <label for="email">Your e-mail</label><br>
+                    <input type="email" id="email" name="email"><br>
+                    <label for="message">Your message</label><br>
+                    <textarea id="message" name="message" placeholder="Talk to me!"></textarea><br>
+                    <input type="submit" value="Submit">
+                    <input type="reset" value="Reset">
                 </form>
             </div>
         </section>
