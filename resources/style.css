@@ -1,6 +1,7 @@
 body {
   font-family: "Raleway", sans-serif;
   font-style: normal;
+
   /* background-color: #ffffff; */
   /* background-color: #fafaface; */
   /* background: url("../assets/header-image.png"); 
@@ -99,8 +100,6 @@ main {
   padding: 2%;
 }
 
-
-
 hr {
   width: 110%;
   margin: 3% auto;
@@ -108,8 +107,9 @@ hr {
 }
 
 h3, h4 {
-  /* font-family: Garamond, Georgia, Times, 'Times New Roman', serif; */
-  font-weight: 500;
+  font-family: "novecento-sans-wide", sans-serif;
+  font-weight: 200;
+  font-style: normal;
 }
 
 /* About Me section */
@@ -120,7 +120,7 @@ h3, h4 {
   flex-wrap: wrap;
   align-items: center;
   margin-top: 20px;
-  height: 70vh;
+  /* height: 70vh; */
 }
 
 .text-div {
@@ -176,14 +176,14 @@ button {
   padding: 15px;
   margin: 5px;
   color: #e5e5e5;
-  background-color: #008004de;
+  background-color: #009a05;
   border-style: none;
   border-radius: 5px;
   box-shadow: 0 1px 1px 0 #b3b3b3;
 }
 
 button:hover {
-  background-color: #008004;
+  background-color: #008004de;
 }
 
 /* Projects section */
