@@ -1,15 +1,13 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Raleway", sans-serif;
   font-style: normal;
-
-  /* background-color: #ffffff; */
-  /* background-color: #fafaface; */
-  /* background: url("../assets/header-image.png"); 
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: right top;
-  background-attachment: scroll;  */
 }
+
+
 
 @font-face {
   font-family: brittanySignature;
@@ -60,23 +58,20 @@ body {
 
 .navigation-container {
   width: 100vw;
-  position: fixed;
+  position: absolute;
   top: 0px;
-  left: 0px;
   z-index: 2;
 }
 
 .navigation-items {
   display: flex;
   flex-direction: row;
+  justify-content: flex-end;
   z-index: 2;
   list-style-type: none;
-  margin-left: 57%;
 }
 
 .navigation-items li {
-  display: inline-block;
-  justify-items: flex-end;
   width: 100px;
   padding: 2%;
 }
@@ -86,7 +81,6 @@ body {
   text-decoration: none;
   color: #3647b2;
   font-size: 1.25em;
-  scroll-behavior: smooth;
 }
 
 .navigation-items a:hover {
@@ -106,74 +100,83 @@ hr {
   border-top: 1px solid #3647b2; /* no border */
 }
 
-h3, h4 {
+h2 {
   font-family: "novecento-sans-wide", sans-serif;
-  font-weight: 200;
   font-style: normal;
+  font-weight: 400;
 }
 
 /* About Me section */
-.intro-container {
-  display: flex;
-  /* flex-direction: row-reverse; */
-  justify-content: space-around;
-  flex-wrap: wrap;
-  align-items: center;
-  margin-top: 20px;
-  /* height: 70vh; */
-}
-
-.text-div {
-  width: 55%;
-  /* border: 2px dotted #363636; */
-}
-
 #my-name {
   font-family: "mina", serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 3em;
-  /* font-variant: small-caps; */
-  line-height: 1;
+  font-size: 4em;
+  margin-bottom: 0;
+  line-height: 2;
+  text-align: right;
 }
 
-#professional-id {
-  font-size: 1.5em;
-  color: #363636;
-  line-height: 1;
+.intro-container {
+  display: flex;
+  justify-content: space-around;
+  width: 90vw;
+  height: 80vh;
+  flex-wrap: wrap;
+  align-items: center;
+  /* margin-top: 20px; */
+}
+
+.intro-div {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.photo-div {
+  justify-self: flex-end;
+}
+
+.text-div {
+  text-align: right;
+}
+
+.professional-id, #based-in-ohio {
+  /* font-family: "novecento-sans-wide", sans-serif; */
+  font-family: "Libre Baskerville", serif;
+  font-style: normal;
+  /* font-variant: small-caps; */
+}
+
+.professional-id {
+  font-size: 2.5em;
+  font-weight: 300;
+  color: #656565;
+  line-height: .7;
 }
 
 #based-in-ohio {
   display: inline;
-  font-size: 1.2em;
+  font-size: 1.3em;
+  font-weight: 400;
   color: #007084;
-  line-height: 0;
 }
 
 .text-div p {
-  font-size: 1.2em;
+  font-size: 1.5em;
+  text-wrap: wrap;
+  line-height: 1.5;
   /* font-weight: 505; */
 }
 
-/* .photo-div {
-  width: 40%;
-} */
-
 #columbus-ohio {
-  width: 300px;
-  height: 300px;
-}
-
-#headshot {
-  width: 300px;
-  height: 300px;
-  border-radius: 50%;
-  box-shadow: 1px 1px 1px 1px #b3b3b3;
-  /* margin: 5%; */
+  width: 275px;
+  height: 275px;
+  opacity: 90%;
 }
 
 button {
-  padding: 15px;
+  padding: 10px;
   margin: 5px;
   color: #e5e5e5;
   background-color: #009a05;
@@ -199,7 +202,6 @@ button:hover {
   height: 275px;
   padding: 1%;
   margin: 10px;
-  /* border: 1px solid #363636; */
   box-shadow: 0 1px 1px 0 #737373;
   border-radius: 5%;
 }
@@ -241,8 +243,11 @@ button:hover {
 }
 
 .tech-stack-logos img {
-  height: 80px;
+  height: 65px;
 }
+
+/* About Me section */
+
 
 /* Contact section */
 /* .contact-container {
@@ -284,8 +289,33 @@ input[type=reset]:hover {
 }
 
 /* Footer */
-footer {
-  text-align: center;
+footer p {
+  font-size: large;
+  text-align: left;
+}
+
+#footer-name {
+  font-family: "mina", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.5em;
+  line-height: .75;
+}
+
+.footer-links {
+  display: flex;
+  list-style-type: none;
+}
+
+.footer-links li {
+  justify-items: space-evenly;
+  padding: 1% 2%;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: #3647b2;
+  font-size: 1em;
 }
 
 /* @media only screen and (max-width: 600px) {
