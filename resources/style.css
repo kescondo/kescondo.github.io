@@ -3,11 +3,11 @@ html {
 }
 
 body {
+  max-width: 100%;
+  overflow-x: hidden;
   font-family: "Raleway", sans-serif;
   font-style: normal;
 }
-
-
 
 @font-face {
   font-family: brittanySignature;
@@ -18,8 +18,6 @@ body {
 .background-image {
   position: relative;
   width: 100vw;
-  /* height: auto; */
-  /* overflow: hidden;  */
   text-align: center;
   top: -20px;
   left: -1%;
@@ -104,6 +102,11 @@ h2 {
   font-family: "novecento-sans-wide", sans-serif;
   font-style: normal;
   font-weight: 400;
+}
+
+.back-to-top {
+  text-decoration: none; 
+  text-align: right;
 }
 
 /* About Me section */
@@ -194,7 +197,6 @@ button:hover {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  /* background-color: rgb(201, 201, 201); */
 }
 
 .project-card {
@@ -204,11 +206,43 @@ button:hover {
   margin: 10px;
   box-shadow: 0 1px 1px 0 #737373;
   border-radius: 5%;
+  background-color: transparent;
+  perspective: 1000px;
 }
 
-.project-card img {
-  width: 250px;
-  margin: 5% 10%;
+/* Container to position front and back side */
+.project-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Horizontal flip when you mouse over the flip box container */
+.project-card:hover .project-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.project-card-front, .project-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+.project-card-front {
+  background-color: #fff;
+  color: #656565;
+  justify-content: center;
+  align-content: center;
+}
+
+.project-card-front img {
+  width: 275px;
   box-shadow: 0px 1px 1px 1px #737373;
 }
 
@@ -216,11 +250,18 @@ button:hover {
   font-weight: 600;
 }
 
-.project-card p {
+.project-card-back {
+  background-color: #fff;
+  color: #656565;
+  transform: rotateY(180deg);
+  align-content: center;
+}
+
+/* .project-card p {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-}
+} */
 
 
 

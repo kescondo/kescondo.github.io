@@ -3,6 +3,8 @@
 
 <head>
     <meta charset="utf-8" />
+    <!-- Set the viewport width to the device width -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kristina Escondo, Full Stack Developer</title>
     <link rel="stylesheet" type="text/css" href="resources\style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -26,7 +28,7 @@
         <img src="assets\header-image.png" id="header-image" />
     </div>
 
-    <header class="navigation-container">
+    <header class="navigation-container" id="home">
         <ul class="navigation-items">
             <li>
                 <a href="#about">About</a>
@@ -49,8 +51,7 @@
     </header>
 
     <main>
-
-        <section class="intro-container" id="home">
+        <section class="intro-container" id="intro">
             <div class="intro-div">
                 <!-- <div class="photo-div">
                     <img src="assets/columbus-ohio-clear.png" alt="Columbus, Ohio" id="columbus-ohio" />
@@ -68,7 +69,7 @@
                         <i>clean, thoughtful,</i> and <i>functional</i>
                         web applications.
                     </p>
-                    <p>Check out my work below <i class="fa-solid fa-arrow-down"></i></p>
+                    <p>Check out my work below <a href="#projects"><i class="fa-solid fa-arrow-down"></i></a></p>
                 </div>
             </div>
         </section>
@@ -78,24 +79,50 @@
         <h2 id="projects">Projects</h2>
         <section class="projects-container">
             <div class="project-card">
-                <img src="assets/laptop-placeholder.png" alt="screenshot of app" id="playsnap" />
-                <p class="project-title">PlaySnap: Toy Inventory Manager</p>
-                <p class="project-description">Organizes and keeps track of a family's toy collection while documenting
-                    a family's story of play.</p>
-                <a href="#">Learn more</a>
+                <div class="project-card-inner">
+                    <div class="project-card-front">
+                        <img src="assets/laptop-placeholder.png" alt="screenshot of app" id="playsnap" />
+                        <p class="project-title">PlaySnap: Toy Inventory Manager</p>
+                    </div>
+                    <div class="project-card-back">
+                        <p class="project-description">
+                            PlaySnap organizes and keeps track of a family's toy collection and,
+                            through collections, photos, and wish lists,
+                            documents a family's story of play.</p>
+                        <a href="#">Learn more</a>
+                    </div>
+                </div>
             </div>
+
             <div class="project-card">
-                <img src="assets/laptop-placeholder.png" alt="screenshot of app" id="playsnap" />
-                <p class="project-title">Pamilya: Home Management App</p>
-                <p class="project-description">Manages a family's schedules, to-do lists, and finds local
-                    family-friendly activities.</p>
-                <a href="#">Learn more</a>
+                <div class="project-card-inner">
+                    <div class="project-card-front">
+                        <img src="assets/laptop-placeholder.png" alt="screenshot of app" id="pamilya" />
+                        <p class="project-title">Pamilya: Home Management App</p>
+                    </div>
+                    <div class="project-card-back">
+                        <p class="project-description">
+                            Pamilya manages a family's schedules, to-do lists, and finds local
+                            family-friendly activities, helping people spend more time with the people they love.</p>
+                        <a href="#">Learn more</a>
+                    </div>
+                </div>
             </div>
+
             <div class="project-card">
-                <img src="assets/laptop-placeholder.png" alt="screenshot of app" id="playsnap" />
-                <p class="project-title">Chef's Compass: Meal Planner</p>
-                <p class="project-description">Team project: Finds and saves recipes and create meal plans.</p>
-                <a href="#">Learn more</a>
+                <div class="project-card-inner">
+                    <div class="project-card-front">
+                        <img src="assets/laptop-placeholder.png" alt="screenshot of app" id="mealplanner" />
+                        <p class="project-title">Chef's Compass: Meal Planner</p>
+                    </div>
+                    <div class="project-card-back">
+                        <p class="project-description">
+                            Chef's Compass saves time by helping busy professionals find recipes online,
+                            save them to their cookbook, and create meal plans from saved recipes.
+                            Created as part of a team at Tech Elevator.</p>
+                        <a href="#">Learn more</a>
+                    </div>
+                </div>
             </div>
             <!-- <div class="project-card">
                 <img src="assets/laptop-placeholder.png" alt="screenshot of app" id="playsnap" />
@@ -109,12 +136,17 @@
                 <p class="project-description">A payment transfer service.</p>
                 <a href="#">Learn more</a>
             </div> -->
+
         </section>
+        <br>
+        <div class="back-to-top">
+            <a href="#home"><i class="fa-solid fa-arrow-up"></i></a>
+        </div>
 
         <hr>
 
-        <h2>Tools of the trade</h2>
-        <section class="skills-container" id="skills">
+        <h2 id="skills">Tools of the trade</h2>
+        <section class="skills-container">
             <div class="tech-stack-logos">
                 <img src="assets\tech-stack-logos\java-logo.svg" alt="Java logo" id="java-logo" />
                 <p>Java</p>
@@ -155,13 +187,15 @@
                     find solutions, and promoting innovation and creativity through technology stems from my background
                     as an educator/researcher in the humanities.
                 </p>
+                <p>Learn about <a href="https://independent.academia.edu/KristinaEscondo">my research</a>.</p>
+                <p>Toy engineering projects</p>
             </div>
-
-
         </section>
 
-        <h2>Let's get in touch</h2>
-        <section class="contact-container" id="contact">
+        <hr>
+
+        <h2 id="contact">Let's get in touch</h2>
+        <section class="contact-container">
             <div class="form-container">
                 <form>
                     <label for="fullname">Your name</label><br>
