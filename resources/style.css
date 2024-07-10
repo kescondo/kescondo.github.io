@@ -142,11 +142,12 @@ h2 {
 
 .text-div {
   text-align: right;
+  margin-left: 4%;
 }
 
 .professional-id, #based-in-ohio {
-  /* font-family: "novecento-sans-wide", sans-serif; */
-  font-family: "Libre Baskerville", serif;
+  font-family: "novecento-sans-wide", sans-serif;
+  /* font-family: "Libre Baskerville", serif; */
   font-style: normal;
   /* font-variant: small-caps; */
 }
@@ -154,7 +155,7 @@ h2 {
 .professional-id {
   font-size: 2.5em;
   font-weight: 300;
-  color: #656565;
+  color: #535353;
   line-height: .7;
 }
 
@@ -166,7 +167,7 @@ h2 {
 }
 
 .text-div p {
-  font-size: 1.5em;
+  font-size: 1.3em;
   text-wrap: wrap;
   line-height: 1.5;
   /* font-weight: 505; */
@@ -203,9 +204,9 @@ button:hover {
   width: 300px;
   height: 275px;
   padding: 1%;
-  margin: 10px;
-  box-shadow: 0 1px 1px 0 #737373;
-  border-radius: 5%;
+  margin: 5px;
+  box-shadow: 0 1px 1px 0 #979797;
+  border-radius: 5%;  
   background-color: transparent;
   perspective: 1000px;
 }
@@ -251,7 +252,7 @@ button:hover {
 }
 
 .project-card-back {
-  background-color: #fff;
+  /* background-color: #b3b3b3; */
   color: #656565;
   transform: rotateY(180deg);
   align-content: center;
@@ -262,8 +263,6 @@ button:hover {
   overflow: hidden;
   text-overflow: ellipsis;
 } */
-
-
 
 /* Tech Stack/Skills section */
 .skills-container {
@@ -279,7 +278,6 @@ button:hover {
   height: 100px;
   justify-content: center;
   padding: 1%;
-  /* margin: 0 0 1% 0; */
   text-align: center;
 }
 
@@ -335,7 +333,7 @@ footer p {
   text-align: left;
 }
 
-#footer-name {
+.footer-name {
   font-family: "mina", serif;
   font-weight: 400;
   font-style: normal;
