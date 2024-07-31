@@ -124,7 +124,7 @@ h2 {
   display: flex;
   justify-content: space-around;
   width: 90vw;
-  height: 80vh;
+  height: 85vh;
   flex-wrap: wrap;
   align-items: center;
   /* margin-top: 20px; */
@@ -244,7 +244,7 @@ button:hover {
 
 .project-card-front img {
   width: 275px;
-  box-shadow: 0px 1px 1px 1px #737373;
+  box-shadow: 0px 1px 1px 0 #737373;
 }
 
 .project-title {
@@ -263,6 +263,11 @@ button:hover {
   overflow: hidden;
   text-overflow: ellipsis;
 } */
+
+/* About Me section */
+
+
+
 
 /* Tech Stack/Skills section */
 .skills-container {
@@ -285,13 +290,12 @@ button:hover {
   height: 65px;
 }
 
-/* About Me section */
-
 
 /* Contact section */
-/* .contact-container {
-  height: 30vh;
-} */
+
+.contact-information a {
+  text-decoration: none;
+}
 
 #fullname, #email {
   padding: 8px;
@@ -355,6 +359,20 @@ footer p {
   text-decoration: none;
   color: #3647b2;
   font-size: 1em;
+}
+
+/* Resume page */
+.resume-contact-container {
+  position: absolute;
+  top: -50px;
+}
+
+#name {
+  font-family: "mina", serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 3em;
+  margin: 0;
 }
 
 /* @media only screen and (max-width: 600px) {
