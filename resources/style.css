@@ -99,9 +99,12 @@ hr {
 }
 
 h2 {
-  font-family: "novecento-sans-wide", sans-serif;
+  /* font-family: "novecento-sans-wide", sans-serif; */
+  font-family: "Raleway", sans-serif;
   font-style: normal;
   font-weight: 400;
+  font-size: 2em;
+  text-align: center;
 }
 
 .back-to-top {
@@ -198,6 +201,7 @@ button:hover {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
+  height: 50vh;
 }
 
 .project-card {
@@ -264,17 +268,13 @@ button:hover {
   text-overflow: ellipsis;
 } */
 
-/* About Me section */
-
-
-
-
 /* Tech Stack/Skills section */
 .skills-container {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-evenly;
+  height: 20vh;
 }
 
 .tech-stack-logos {
@@ -290,8 +290,29 @@ button:hover {
   height: 65px;
 }
 
+/* About Me section */
+.about-me-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  height: 60vh;
+}
+
+.about-me-card {
+  width: 25vw;
+  padding: 2%;
+  /* margin: 8px 0px; */
+  box-shadow: 0 1px 1px 0 #979797;
+  text-align: center;
+  align-content: center;
+  line-height: 1.3;
+}
 
 /* Contact section */
+.contact-container {
+  /* height: 20vh; */
+  font-size: 1.2em;
+}
 
 .contact-information a {
   text-decoration: none;
@@ -332,26 +353,29 @@ input[type=reset]:hover {
 }
 
 /* Footer */
+footer {
+  align-content: center;
+}
 footer p {
   font-size: large;
-  text-align: left;
+  text-align: center;
 }
 
 .footer-name {
   font-family: "mina", serif;
   font-weight: 400;
   font-style: normal;
-  font-size: 1.5em;
+  font-size: 1.7em;
   line-height: .75;
 }
 
 .footer-links {
   display: flex;
+  justify-content: center;
   list-style-type: none;
 }
 
 .footer-links li {
-  justify-items: space-evenly;
   padding: 1% 2%;
 }
 
