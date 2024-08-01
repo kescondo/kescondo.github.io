@@ -294,14 +294,13 @@ button:hover {
 .about-me-container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
-  height: 60vh;
+  justify-content: space-evenly;
 }
 
 .about-me-card {
   width: 25vw;
-  padding: 2%;
-  /* margin: 8px 0px; */
+  padding: 1.5%;
+  margin: 8px;
   box-shadow: 0 1px 1px 0 #979797;
   text-align: center;
   align-content: center;
@@ -310,7 +309,6 @@ button:hover {
 
 /* Contact section */
 .contact-container {
-  /* height: 20vh; */
   font-size: 1.2em;
 }
 
@@ -389,9 +387,11 @@ footer p {
 .resume-contact-container {
   position: absolute;
   top: -50px;
+  display: flex;
 }
 
-#name {
+.resume-name {
+  /* text-align: center; */
   font-family: "mina", serif;
   font-style: normal;
   font-weight: 400;
