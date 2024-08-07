@@ -1,7 +1,7 @@
 # kescondo.github.io
 ### Portfolio
-- 😄 Hello! I'm Kristina (she/her), and I recently finished up my program at Tech Elevator, a 14-week in-person full-stack coding bootcamp. I'm interested in full-stack, front-end, or mobile development.
-- This portfolio aims to showcase my projects and coding skills, as well as reflect on my progress as I continue to improve. I intentionally use Vanilla JavaScript rather than a reactive framework as a learning tool; other libraries, technologies, and frameworks will be reflected in my projects.
+- 😄 Hello! I'm Kristina (she/her), and I finished up my program at Tech Elevator, a 14-week in-person full-stack coding bootcamp, last December. I'm interested in full-stack, front-end, or mobile development.
+- This portfolio aims to be an introduction to my projects and coding skills, as well a living document that reflects my progress as I continue to learn and improve. I intentionally use Vanilla JavaScript rather than a reactive framework as a learning tool; other libraries, technologies, and frameworks will be reflected in my projects.
 
 ### Technology and creative works used in this portfolio
 - HTML, CSS, JavaScript
