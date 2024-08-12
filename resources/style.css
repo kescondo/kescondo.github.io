@@ -9,11 +9,6 @@ body {
   font-style: normal;
 }
 
-@font-face {
-  font-family: brittanySignature;
-  src: url(.\assets\brittany_signature\BrittanySignature.ttf);
-}
-
 /* header & nav bar */
 .background-image {
   position: relative;
@@ -39,20 +34,10 @@ body {
   width: 100%;
   height: 100%;
   background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 40%, rgba(255, 255, 255, 1) 100%);
-  pointer-events: none; /* Allows interaction with elements behind the white box */
+  pointer-events: none;
+  /* Allows interaction with elements behind the white box */
   z-index: 0;
 }
-
-/* #header-image {
-  position: fixed;
-  top: 0px;
-  left: 0px;
-  z-index: -8;
-  width: 100vw;
-  opacity: .98;
-  object-fit: cover;
-  object-position: 95% 0; 
-} */
 
 .navigation-container {
   width: 100vw;
@@ -95,7 +80,8 @@ main {
 hr {
   width: 110%;
   margin: 3% auto;
-  border-top: 1px solid #3647b2; /* no border */
+  border-top: 1px solid #3647b2;
+  /* no border */
 }
 
 h2 {
@@ -108,11 +94,30 @@ h2 {
 }
 
 .back-to-top {
-  text-decoration: none; 
+  text-decoration: none;
   text-align: right;
 }
 
 /* About Me section */
+.intro-container {
+  display: flex;
+  justify-content: space-around;
+  width: 90vw;
+  height: 85vh;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.intro-div {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.name-title {
+  display: inline;
+}
+
 #my-name {
   font-family: "mina", serif;
   font-style: normal;
@@ -123,36 +128,15 @@ h2 {
   text-align: right;
 }
 
-.intro-container {
-  display: flex;
-  justify-content: space-around;
-  width: 90vw;
-  height: 85vh;
-  flex-wrap: wrap;
-  align-items: center;
-  /* margin-top: 20px; */
-}
-
-.intro-div {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-}
-
-.photo-div {
-  justify-self: flex-end;
-}
-
 .text-div {
   text-align: right;
   margin-left: 4%;
 }
 
-.professional-id, #based-in-ohio {
+.professional-id,
+#based-in-ohio {
   font-family: "novecento-sans-wide", sans-serif;
-  /* font-family: "Libre Baskerville", serif; */
   font-style: normal;
-  /* font-variant: small-caps; */
 }
 
 .professional-id {
@@ -210,7 +194,7 @@ button:hover {
   padding: 1%;
   margin: 5px;
   box-shadow: 0 1px 1px 0 #979797;
-  border-radius: 5%;  
+  border-radius: 5%;
   background-color: transparent;
   perspective: 1000px;
 }
@@ -231,11 +215,13 @@ button:hover {
 }
 
 /* Position the front and back side */
-.project-card-front, .project-card-back {
+.project-card-front,
+.project-card-back {
   position: absolute;
   width: 100%;
   height: 100%;
-  -webkit-backface-visibility: hidden; /* Safari */
+  -webkit-backface-visibility: hidden;
+  /* Safari */
   backface-visibility: hidden;
 }
 
@@ -262,23 +248,17 @@ button:hover {
   align-content: center;
 }
 
-/* .project-card p {
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-} */
-
 /* Tech Stack/Skills section */
 .skills-container {
   display: flex;
-  flex-direction: row;
+  /* flex-direction: row; */
   flex-wrap: wrap;
   justify-content: space-evenly;
   height: 20vh;
 }
 
 .tech-stack-logos {
-  display: block;
+  /* display: block; */
   width: 100px;
   height: 100px;
   justify-content: center;
@@ -298,7 +278,7 @@ button:hover {
 }
 
 .about-me-card {
-  width: 25vw;
+  width: 300px;
   padding: 1.5%;
   margin: 8px;
   box-shadow: 0 1px 1px 0 #979797;
@@ -365,7 +345,7 @@ button:hover {
   border-radius: 3%;
   text-align: center;
   align-content: center;
-  line-height: 1.3; 
+  line-height: 1.3;
 }
 
 .contact-card img {
@@ -381,7 +361,8 @@ button:hover {
   text-decoration: none;
 }
 
-#fullname, #email {
+#fullname,
+#email {
   padding: 8px;
   margin: 10px;
   width: 300px;
@@ -397,7 +378,8 @@ textarea {
   border-width: 1px;
 }
 
-input[type=submit], input[type=reset] {
+input[type=submit],
+input[type=reset] {
   background-color: #008004de;
   color: white;
   padding: 15px 20px;
@@ -419,6 +401,7 @@ input[type=reset]:hover {
 footer {
   align-content: center;
 }
+
 footer p {
   font-size: large;
   text-align: center;
@@ -450,28 +433,78 @@ footer p {
 
 /* Resume page */
 
-.resume-contact-container {
-  position: absolute;
-  top: -50px;
-  display: flex;
-}
-
 .resume-name {
   font-family: "mina", serif;
   font-style: normal;
   font-weight: 400;
   font-size: 3em;
-  margin: 0;
+  margin-top: -50px;
+  padding: 0;
   text-align: center;
-  position: absolute;
-  top: -50px;
-  right: 20%;
-  left: 20%;
-  bottom: 15%;
+  position: relative;
 }
 
-/* @media only screen and (max-width: 600px) {
-  .about-me-container {
+.resume-text {
+  font-size: 1.1em;
+  line-height: 1.3;
+}
+
+hr {
+  border-top: 1px dotted #007084;
+  margin: 0;
+  padding: 0;
+
+}
+
+/*Media queries -- move to a different stylesheet? */
+@media only screen and (max-width: 600px) {
+  .intro-container {
+    display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
   }
-} */
+
+  .intro-div {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  #my-name {
+    text-align: center;
+  }
+
+  .text-div {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+  }
+
+  #projects {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  .skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  .about-me-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+}
+
