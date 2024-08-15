@@ -156,6 +156,7 @@ h2 {
   font-weight: 300;
   color: #535353;
   line-height: .7;
+  text-align: right;
 }
 
 #based-in-ohio {
@@ -530,6 +531,10 @@ hr {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
+    text-align: center;
+  }
+
+  .professional-id {
     text-align: center;
   }
 
