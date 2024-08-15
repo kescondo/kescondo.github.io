@@ -306,6 +306,14 @@ button:hover {
   justify-content: space-evenly;
 }
 
+.about-me-tag {
+    font-family: "Raleway", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 1.5em;
+    text-align: center;
+}
+
 .about-me-card {
   width: 300px;
   padding: 1.5%;
