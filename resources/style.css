@@ -103,9 +103,21 @@ h2 {
   display: flex;
   justify-content: space-around;
   width: 90vw;
-  height: 85vh;
+  /* height: 85vh; */
   flex-wrap: wrap;
   align-items: center;
+}
+
+/* For bigger screens */
+@media only screen and (min-width: 701px) {
+  .intro-container {
+    display: flex;
+    justify-content: space-around;
+    width: 90vw;
+    height: 85vh;
+    flex-wrap: wrap;
+    align-items: center;
+  }
 }
 
 .intro-div {
@@ -185,9 +197,18 @@ button:hover {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  height: 50vh;
+  /* height: 50vh; */
 }
 
+@media only screen and (min-width: 701px) {
+  .projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    height: 50vh;
+  }
+
+}
 .project-card {
   width: 300px;
   height: 275px;
@@ -251,10 +272,18 @@ button:hover {
 /* Tech Stack/Skills section */
 .skills-container {
   display: flex;
-  /* flex-direction: row; */
   flex-wrap: wrap;
   justify-content: space-evenly;
-  height: 20vh;
+  /* height: 20vh; */
+}
+
+@media only screen and (min-width: 701px) {
+  .skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    height: 20vh;
+  }
 }
 
 .tech-stack-logos {
@@ -316,7 +345,7 @@ button:hover {
 }
 
 #toy-engineer {
-  background-image: url(/assets/toy-boat.jpg);
+  background-image: url(/assets/toy-engineering/toy-boat.jpg);
   background-position: center;
   background-size: cover;
 }
@@ -458,6 +487,10 @@ hr {
 
 /*Media queries -- move to a different stylesheet? */
 @media only screen and (max-width: 600px) {
+  body {
+    display: flex;
+  }
+
   .intro-container {
     display: flex;
     flex-direction: column;
@@ -507,4 +540,3 @@ hr {
   }
 
 }
-
