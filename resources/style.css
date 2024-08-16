@@ -63,7 +63,7 @@ body {
 .navigation-items a {
   text-decoration: none;
   color: #3647b2;
-  font-size: 1.25em;
+  font-size: .9em;
 }
 
 .navigation-items a:hover {
@@ -96,6 +96,10 @@ h2 {
 .back-to-top {
   text-decoration: none;
   text-align: right;
+}
+
+.back-to-top a {
+  text-decoration: none;
 }
 
 /* About Me section */
@@ -173,7 +177,7 @@ h2 {
   /* font-weight: 505; */
 }
 
-#columbus-ohio {
+/* #columbus-ohio {
   width: 275px;
   height: 275px;
   opacity: 90%;
@@ -191,7 +195,7 @@ button {
 
 button:hover {
   background-color: #008004de;
-}
+} */
 
 /* Projects section */
 .projects-container {
@@ -210,6 +214,7 @@ button:hover {
   }
 
 }
+
 .project-card {
   width: 300px;
   height: 275px;
@@ -308,11 +313,11 @@ button:hover {
 }
 
 .about-me-tag {
-    font-family: "Raleway", sans-serif;
-    font-weight: 400;
-    font-style: italic;
-    font-size: 1.5em;
-    text-align: center;
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 1.5em;
+  text-align: center;
 }
 
 .about-me-card {
@@ -328,7 +333,7 @@ button:hover {
 .info-box {
   background-color: #fff;
   padding: 2%;
-  opacity: .85;
+  opacity: .95;
   background-size: contain;
   border-radius: 2%;
 }
@@ -456,22 +461,27 @@ footer p {
   font-style: normal;
   font-size: 1.7em;
   line-height: .75;
+  text-align: center;
 }
 
 .footer-links {
   display: flex;
-  justify-content: center;
-  list-style-type: none;
+  justify-content: space-evenly;
+  /* list-style-type: none; */
+  align-items: center;
 }
 
-.footer-links li {
+.footer-links p {
   padding: 1% 2%;
+  line-height: 1.5;
+  flex-wrap: wrap;
+  text-align: center;
 }
 
 .footer-links a {
   text-decoration: none;
   color: #3647b2;
-  font-size: 1em;
+  font-size: .85em;
 }
 
 /* Resume page */
@@ -510,6 +520,10 @@ hr {
     display: flex;
   }
 
+  .background-image img {
+    opacity: 0.5;
+  }
+
   .intro-container {
     display: flex;
     flex-direction: column;
@@ -525,10 +539,14 @@ hr {
 
   #my-name {
     text-align: center;
+    font-size: 3em;
+    margin-bottom: 0;
+    line-height: 2;
   }
 
   .text-div {
     display: flex;
+    justify-content: center;
     align-items: center;
     flex-wrap: wrap;
     text-align: center;
@@ -536,6 +554,7 @@ hr {
 
   .professional-id {
     text-align: center;
+    line-height: 1.2;
   }
 
   #projects {
@@ -560,6 +579,35 @@ hr {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+  }
+
+  .contact-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .contact-card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 85vw;
+
+  }
+
+  .contact-card p {
+    text-align: center;
+    font-size: .8em;
+  }
+
+  .footer-links li {
+    line-height: 2;
+    flex-wrap: wrap;
+    text-align: center;
+
   }
 
 }
