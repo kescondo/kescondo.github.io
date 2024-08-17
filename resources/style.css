@@ -177,6 +177,10 @@ h2 {
   /* font-weight: 505; */
 }
 
+.text-div a {
+  text-decoration: none;
+  font-size: .9em;
+}
 /* #columbus-ohio {
   width: 275px;
   height: 275px;
@@ -196,6 +200,66 @@ button {
 button:hover {
   background-color: #008004de;
 } */
+
+/* About Me section */
+.about-me-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.about-me-tag {
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 1.5em;
+  text-align: center;
+}
+
+.about-me-card {
+  width: 300px;
+  padding: 1.5%;
+  margin: 8px;
+  box-shadow: 0 1px 1px 0 #979797;
+  text-align: center;
+  align-content: center;
+  line-height: 1.3;
+}
+
+.info-box {
+  background-color: #fff;
+  padding: 2%;
+  opacity: .95;
+  background-size: contain;
+  border-radius: 2%;
+}
+
+.info-box p {
+  font-weight: 500;
+  z-index: 2;
+  padding: 1%;
+}
+
+#my-why {
+  background-image: url(/assets/flowers-and-books.png);
+  background-size: cover;
+}
+
+#my-contributions {
+  background-image: url(/assets/collaboration.png);
+  background-size: cover;
+}
+
+#former-professor {
+  background-image: url(/assets/global-flowers.png);
+  background-size: cover;
+}
+
+#toy-engineer {
+  background-image: url(/assets/toy-engineering/toy-boat.jpg);
+  background-position: center;
+  background-size: cover;
+}
 
 /* Projects section */
 .projects-container {
@@ -303,65 +367,6 @@ button:hover {
 
 .tech-stack-logos img {
   height: 65px;
-}
-
-/* About Me section */
-.about-me-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-}
-
-.about-me-tag {
-  font-family: "Raleway", sans-serif;
-  font-weight: 400;
-  font-style: italic;
-  font-size: 1.5em;
-  text-align: center;
-}
-
-.about-me-card {
-  width: 300px;
-  padding: 1.5%;
-  margin: 8px;
-  box-shadow: 0 1px 1px 0 #979797;
-  text-align: center;
-  align-content: center;
-  line-height: 1.3;
-}
-
-.info-box {
-  background-color: #fff;
-  padding: 2%;
-  opacity: .95;
-  background-size: contain;
-  border-radius: 2%;
-}
-
-.info-box p {
-  font-weight: 500;
-  z-index: 2;
-}
-
-#my-why {
-  background-image: url(/assets/flowers-and-books.png);
-  background-size: cover;
-}
-
-#my-contributions {
-  background-image: url(/assets/collaboration.png);
-  background-size: cover;
-}
-
-#former-professor {
-  background-image: url(/assets/global-flowers.png);
-  background-size: cover;
-}
-
-#toy-engineer {
-  background-image: url(/assets/toy-engineering/toy-boat.jpg);
-  background-position: center;
-  background-size: cover;
 }
 
 /* Contact section */
